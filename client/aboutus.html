@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" href="./H.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<script defer src="about.js" >
+   
+</script>
+
+</head>
+<body>
+    <style>
+       body
+       {
+        margin: 0%;
+       }
+       body{
+        margin: 0%;
+       }
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+          justify-content: center;
+            background:#0e0e0e;
+           
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            background: #3c31dd;
+            border-radius: 50%;
+            z-index: 2;
+            animation: forwards 1s ease center 0.5s ;
+        }
+        .ball2{
+            width: 50px;
+            height: 50px;
+            background: #239e1f;
+            display: block;
+            position: absolute;
+            border-radius: 50%;
+            animation: forwards 1s ease center 0.5s,forwards 1s ease left 1.5s ;
+
+        }
+        .intro{
+            height: 45vh;
+            width: 20vw;
+            background: #1d1d1d;
+            display: block;
+            position: absolute;
+            border-radius: 1em;
+            opacity: 0;
+            animation: forwards 1s ease pop 2.5s;
+            transform: translateY(50vh);
+        }
+        .me{
+            text-align: center;
+            color: #dddddd;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+
+        }
+        .header{
+            display: block;
+            position: absolute;
+        }
+        h1{
+            color: #fff;
+         
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            text-align: center !important;
+            font-size: 30px;
+        }
+        h3{
+            color: #888;
+            text-align: center;
+            font-family: 'Noto Sans', sans-serif;
+        }
+        .intro2{
+            height: 45vh;
+            width: 20vw;
+            background: #1d1d1d;
+            display: block;
+            position: absolute;
+            border-radius: 1em;
+            opacity: 0;
+            animation: forwards 1s ease pop 2.5s;
+            transform: translate( 30vw,50vh);
+        }
+        .intro3{
+            height: 45vh;
+            width: 20vw;
+            background: #1d1d1d;
+            display: block;
+            position: absolute;
+            border-radius: 1em;
+            opacity: 0;
+            animation: forwards 1s ease pop 2.5s;
+            transform: translate( -30vw,50vh);
+        }
+        .ball3{
+            width: 50px;
+            height: 50px;
+            background: #dd1d1d;
+            display: block;
+            position: absolute;
+            border-radius: 50%;
+            animation: forwards 1s ease center 0.5s,forwards 1s ease right 1.5s ;
+
+        }
+        .pointer{
+            color: rgba(255,255,255,.75);
+            animation: infinite 1s linear blink ;
+        }
+        .roles{
+            text-align: center;
+            color: #f3f3f3;
+            font-family: 'Dosis', sans-serif;
+        }
+        @media screen and (max-width: 600px) {
+            .me{
+                font-size: medium;
+            }
+            
+        }
+        .sarvagay{
+            display: block;
+            position: absolute;
+            width: 100%;
+        
+            background: #0E0E0E;
+        }
+        @keyframes blink {
+            from{opacity: 0;}
+            to{opacity: 1;}
+        }
+        @keyframes pop {
+            from{
+                opacity: 0.5;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        @keyframes right {
+            from{
+                transform: translate(0vw,30vh);
+            }
+            to{
+                transform: translate(20vw,30vh);
+            }
+            
+        }
+        @keyframes left {
+            from{
+                transform: translate(0vw,30vh);
+            }
+            to{
+                transform: translate(-20vw,30vh);
+            }
+        }
+        @keyframes center{
+            from {
+                transform: translateY(0vh);
+            }
+            to{
+                transform: translateY(30vh);
+            }
+        }
+
+    </style>
+    <section class="container">
+        
+
+        <div class="ball2"></div>
+        
+    <div class="ball3" ></div>
+    
+    <div class="ball"></div>
+    <div class="intro">
+        <h1>Sarvagya Singh</h1>
+        <h3 > Team Leader & Head Web-developer
+             </h3>
+    </div>
+    <div class="intro2">
+        <h1>Jai S Swatik</h1>
+        <h3 >Content Writter </h3>
+    </div>
+    
+    <div class="intro3">
+        <h1>Shub</h1>
+        <h3 >Web-designer </h3>
+
+    </div>
+    <h1 class="header">Meet our members</h1>
+  
+
+    </section>    <section class="sarvagay">
+        <h1>Sarvagya Singh </h1> <h2 class="roles"><span class="svroles"></span>   <span class="pointer">|</span></h2>
+        <h2 class="me">Meet Sarvagya, a talented and motivated 10th grader who recently led a team to create an impressive website from scratch. With a passion for web development and an eye for detail, Sarvagya served as the team captain, demonstrating exceptional leadership skills and guiding the team towards success.<br>
+            He also Wrote the entire code of the website from start to finish and showed astonishing excellency in doing so.<br>
+        </h2>
+        <br><br><br>
+        <h1>Subh</h1>
+        <h2 class="roles">Web-designer</h2>
+        <h2 class="me">
+            A class 9 student (for the session 2023-24) studying in DPS Bokaro Steel City who with his coding and designing skills designs the web-pages.
+        </h2>
+        <br><br><br>
+        <h1>Jay Satvik Madireddy</h1>
+        <h2 class="roles">Content Creator</h2>
+        <h2 class="me">
+            A class 9 student (for the session 2023-24) studying in DPS Bokaro Steel City who with his creative and educational skills  prepares the content for the website.
+        </h2>                                                                 
+</section>
+
+
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Nunito:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">   
+<link rel="stylesheet" href="./styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="icon" href="./H.png">
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="article.js">
+   
+
+    </script>
+    <style>
+        body{
+            
+            display: flex;
+	background: #000;
+	min-height: 100vh;
+    margin-top: 10%;
+    justify-content: center;
+        }
+
+.content{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.content h2 {
+    text-transform: uppercase;
+    text-align: center;
+    width:100%;
+	font-size: 3em;
+	position: absolute;
+}
+
+.content h2:nth-child(1) {
+    
+   
+	color: transparent;
+	-webkit-text-stroke: 2px #00415f;
+}
+
+.content h2:nth-child(2) {
+	color: #0069f3;
+	animation: animate 4s ease-in-out infinite;
+}
+.mainImg{
+    transform: translateY(-10%) ;
+    position: relative;
+    top: 50vh;
+    height: 120vh;
+    border-radius: 2em;
+}
+.title-1{
+    position: relative;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #e4e4e4;
+
+}
+.mainBody{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+top: 200vh;
+
+}
+.loading{
+    position: fixed;
+    width: 100%;
+    height: 10px;
+    background: #707070;
+    top: 70px;
+}
+.loadingBar{
+    position: fixed;
+    top: 70px;
+    height: 10px;
+    background: #0069f3;
+}
+.mainImg:hover{
+    
+  box-shadow: 5px 10px 18px #888888;
+}
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 20%,
+			70% 41%,
+			84% 19%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 100%,
+			15% 65%,
+			34% 66%,
+			51% 72%,
+			67% 80%,
+			84% 65%,
+			100% 106%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+    </style>
+</head>
+<body>
+    <div id="main">
+    <div>
+        <div class="navbar" style="background: rgb(14, 14, 14);position: fixed;">
+           
+            <div class="navel">
+                <h2  style="font-weight: 300;color: #ececec;">HAVK</h2>
+                <div>
+                  <nav class="pages" >
+                    <ul>
+                      <li><a href="./aboutus.html">About Us</a></li>
+                      <li style="background: transparent;"><a href="./news.html">News</a></li>
+                     
+                    </ul>
+                  </nav>
+               
+            </div>
+            </div>
+            <div class="loading" >
+                <div class="loadingBar">
+
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h2>What techniques they use to penetrate systems?</h2>
+            <h2>What techniques they use to penetrate systems?</h2>
+          </div>
+          <div>
+            <img class="mainImg" src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+          </div>
+        <br>
+        <div class="mainBody">
+
+          <h1 class="title-1">Standard Tools used in Ethical Hacking</h1>
+          <br>
+          <h3 style="color: #7a7a7a;"><span style="color: #e4e4e4;margin-top: 50px;font-size: larger;"> NMAP</span>: It is one of the most popular network scanning and mapping tools. Its built-in scripting library can scan for open ports and check for vulnerabilities. It can be used locally and remotely to monitor networks for security gaps. It can also be used on mobile devices and smartphones with root credentials.</h3>
+          <br>
+          <h3 style="color: #7a7a7a;"><span style="color: #e4e4e4;margin-top: 50px;font-size: larger;"> Wireshark</span>: It is a protocol analyzer tool that allows you to collect the data from a network without disturbing its ongoing operations. It helps ethical hackers test the network for security flaws. This tool is beneficial to ethical hackers trying to identify what kind of traffic the computer sends/receives while connected online. The only limitation to this tool is that the viewable packets are visible as long as they are not encrypted.</h3>
+          <br>
+          <h3 style="color: #7a7a7a;"><span style="color: #e4e4e4;margin-top: 50px;font-size: larger;"> Burp Suite</span>:  It is an integrated platform for web security testing that includes proxy server, repeater and intruder mode. It also includes other tools such as Spider, Scanner and Intruder. This tool makes it easy for an ethical hacker to perform various tasks, such as detecting vulnerabilities in websites/web applications. The testing is done while maintaining a high level of security throughout their operation process.</h3>
+          <br>  
+          <h2 class="title-1">NMAP</h2>
+          <h3 style="color: #707070;">
+            Nmap (short for Network Mapper) is an open-source tool that is widely used by security professionals, network administrators, and hackers alike for a variety of purposes such as network exploration, management, and security auditing. The tool is designed to scan networks, identify the hosts, the services running on them, and the vulnerabilities they might be exposed to.
+
+Nmap is a powerful and versatile tool that can perform a wide range of tasks. It can be used to map networks, scan for open ports, detect operating systems and software versions, perform vulnerability assessments, and more. The tool uses a combination of different techniques to gather information about the network topology, system configurations, and potential security risks.
+
+One of the most important features of Nmap is its ability to perform port scanning. Port scanning is the process of scanning a target network for open ports that are used to communicate with services running on the target host. Nmap supports various types of port scanning techniques such as TCP, UDP, and SYN scans, and can be used to scan both IPv4 and IPv6 networks.
+
+Another important feature of Nmap is its ability to perform operating system detection. This feature allows the tool to identify the operating system running on a target host, which can be useful for determining the vulnerabilities and security risks associated with that operating system.
+
+Nmap also supports scriptable interaction with the target hosts, which allows users to write custom scripts to automate certain tasks. This feature is particularly useful for penetration testing, where automated scripts can be used to identify vulnerabilities and exploit them.
+
+In summary, Nmap is a powerful and versatile tool that is widely used for network exploration, management, and security auditing. Its ability to scan networks, identify hosts and services, and detect vulnerabilities makes it an indispensable tool for security professionals and network administrators alike.
+          </h3>
+          <br>
+          <h2 class="title-1">Wireshark</h2>
+          <h3  style="color: #707070;">Wireshark is a popular open-source network protocol analyzer used for troubleshooting, analysis, and development of communication protocols. It is a powerful tool that allows users to capture, analyze, and display network traffic in real-time.
+
+            Wireshark can be used to capture network packets and display their contents in a detailed and customizable format. It supports a wide range of protocols such as TCP, UDP, HTTP, DNS, and many more. This allows users to easily analyze and debug network traffic, as well as identify potential security risks.
+            
+            One of the key features of Wireshark is its ability to filter network traffic. This allows users to capture only the packets that are relevant to their analysis, which can help reduce the amount of data that needs to be analyzed. Wireshark also supports various display filters that can be used to further refine the captured data.
+            
+            Wireshark also includes a powerful statistics engine that can be used to generate detailed reports on network traffic. These reports can include information such as the number of packets, bytes, and protocols used on the network. This feature can be useful for network administrators to monitor network performance and identify potential issues.
+            
+            Additionally, Wireshark is highly customizable and extensible. It supports plugins that can be used to add additional functionality and features, as well as scripting capabilities that allow users to automate certain tasks.
+            
+            In summary, Wireshark is a powerful network protocol analyzer that is widely used for troubleshooting, analysis, and development of communication protocols. Its ability to capture and display network traffic, filter data, and generate detailed reports make it an indispensable tool for network administrators and security professionals alike.</h3>
+<br>
+<h2 class="title-1">Burp Suite</h2>
+<h3 style="color: #707070;"> Burp Suite is a popular software tool used by web application security professionals for performing security testing and vulnerability assessment. It is a comprehensive platform that includes multiple tools designed to support various stages of the web application security testing process.
+
+    One of the key features of Burp Suite is its proxy server, which allows users to intercept, analyze, and modify web traffic between a client and server. This feature can be used to identify vulnerabilities such as cross-site scripting (XSS), SQL injection, and other types of attacks that may be present in web applications. Burp Suite's proxy also includes an interception capability, which allows users to modify the traffic in real-time, making it an essential tool for testing and verifying web application security.
+    
+    Another important feature of Burp Suite is its scanner, which can automatically crawl web applications and identify security vulnerabilities. It can scan for a wide range of issues, including SQL injection, XSS, command injection, and more. The scanner also includes advanced options for customizing the scan and analyzing the results.
+    
+    Burp Suite also includes a suite of tools for exploring, testing, and manipulating web application sessions. These tools include the ability to analyze cookies, view and modify HTTP requests and responses, and perform authenticated testing against web applications.
+    
+    Furthermore, Burp Suite offers numerous features for reporting and collaboration. It includes a variety of reporting options, including detailed reports on discovered vulnerabilities, evidence of exploitability, and proof-of-concept code snippets. Burp Suite also supports integration with issue tracking systems, version control systems, and other tools commonly used in software development.
+    
+    In summary, Burp Suite is a comprehensive software tool used by web application security professionals for performing security testing and vulnerability assessment. Its features include a proxy server for intercepting and modifying web traffic, a scanner for identifying security vulnerabilities, tools for exploring and manipulating web application sessions, and a variety of reporting and collaboration features.</h3>
+        </div>
+    </div>
+</body>
+</html>

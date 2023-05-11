@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Havk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Nunito:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">   
+<link rel="stylesheet" href="./styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script defer src="./app.js"></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script type="text/javascript" src="./csvjson.json"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <link rel="icon" href="./H.png">
+
+</head>
+<body>
+  <div class="loadingPage">
+    <div class="loader">
+      <h1>HAVK</h1>
+    <svg style="width: 20%;height: 20%;" version="1.1" id="L6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+   <rect fill="none" stroke="#fff" stroke-width="4" x="25" y="25" width="50" height="50">
+  <animateTransform
+     attributeName="transform"
+     dur="0.5s"
+     from="0 50 50"
+     to="90 50 50"
+     type="rotate"
+     id="strokeBox"
+     attributeType="XML"
+     begin="rectBox.end"/>
+  </rect>
+   <rect x="27" y="27" fill="#fff" width="46" height="50">
+  <animate
+     attributeName="height"
+     dur="1.3s"
+     attributeType="XML"
+     from="50" 
+     to="0"
+     id="rectBox" 
+     fill="freeze"
+     begin="0s;strokeBox.end"/>
+  </rect>
+</svg>
+</div>
+
+    </div>
+  <div class="main" style="opacity: 0;" >
+    <div class="model">
+      <div class="data-div">
+        <img onclick="()=>{modelClose()}" class="cross"  src="./xicon.svg">
+        <br>
+        <h1 class="countryText"></h1>
+        <div class="dataTable">
+      
+        <table >
+          <tr>
+            <td>Computers Infected with at Least One web  Malware Attack:    </td>
+            <td class="web-malware">    No Data</td>
+           
+          </tr>
+            <tr>
+            <td>Computers Facing at Least One Local Malware Attack:</td>
+            <td class="malware">No Data</td>
+          
+          </tr>
+            <tr>
+            <td>All Spam Emails by Originating Country (Yearly):</td>
+            <td class="spam-email-data">No Data</td>
+          </tr>
+        </table>
+      </div>
+      </div>
+  
+  </div>
+    <div>
+    <div class="navbar" style="background: rgb(14, 14, 14);position: fixed;">
+       
+        <div class="navel">
+            <h2  style="font-weight: 300;color: #ececec;">HAVK</h2>
+            <div>
+              <nav class="pages" >
+                <ul>
+                  <li><a href="./aboutus.html">About Us</a></li>
+                  <li><a href="./news.html">News</a></li>
+                </ul>
+              </nav>
+      
+        </div>
+        </div>
+        
+    </div>
+    <section class="landing page " id="page1">
+        <div class="LandingText">
+       
+            <h1 class="LandingHeading" >What is ethical hacking?</h1>
+       
+        <h3>Ethical hacking involves an authorized attempt to gain
+             access to a computer system, application, or
+            data. Carrying out an ethical hack involves duplicating
+            strategies and actions of malicious attackers. This practice
+            helps to identify security vulnerabilities which can then be
+            resolved before a malicious attacker has the opportunity to
+            exploit them.</h3>
+    </div>
+   
+    <div class="stars"></div>
+  
+    <div class="earth"></div>
+    </section>
+
+<section class="roadmapPage page " id="page2">
+    <h1  >Let's check your knowledge</h1>
+    <br>
+    <div class="numbers">
+      <div class="number">
+      <p>1</p>
+    </div>
+    <div class="number" >
+      <p>2</p>
+    </div>
+    <div class="number" >
+      <p>3</p>
+    </div>
+    <div class="number">
+      <p>4</p>
+    </div>
+    <div class="number">
+      <p>5</p>
+    </div>
+    <div class="number">
+      <p>6</p>
+    </div>
+    <div class="number">
+      <p>7</p>
+    </div>
+    <div class="number">
+      <p>8</p>
+    </div>
+    <div class="number">
+      <p>9</p>
+    </div>
+    <div class="number">
+      <p>10</p>
+    </div>
+      
+
+    </div>
+    <div class="quizContainer">
+    <div class="quizBox">
+      <p class="question">Dummy text</p>
+      <div class="options">
+        <div class="option">
+          <h3>DummyText</h3>
+        </div>
+        <div class="option">
+          <h3>DummyText</h3>
+        </div>
+        <div class="option">
+          <h3>DummyText</h3>
+        </div>
+        <div class="option">
+          <h3>DummyText</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    
+
+   
+    <div class="circle2" ></div>     
+</section>
+
+<section class="articles page " id="page3">
+    <div class="circle " ></div>
+    <h1 >Articles</h1>
+    <div class="articleList">
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col hidden" onclick="window.location.href=`artlecle1.html`">
+              <div class="card" style="height: 300px;cursor: pointer;">
+                <img src="./download.jpg" style="height: 200px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Standard Tools used in Ethical Hacking</h5>
+                  <p class="card-text">-Jai Satwik</p>
+                </div>
+              </div>
+            </div>
+         
+            <div class="col hidden" onclick="window.location.href=`article2.html`">
+              <div class="card" style="height: 300px;cursor: pointer;">
+                <img style="height: 200px;" src="./20200813112413_42400.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Roles & Responsibilities of an Ethical Hacker</h5>
+                  <p class="card-text">-Jai Satwik</p>
+                </div>
+              </div>
+            </div>
+            <div class="col hidden" onclick="window.location.href=`article3.html`">
+              <div class="card" style="height: 300px;cursor: pointer;">
+                <img style="height: 200px;"  src="./hacking-devices-67039-pixahive.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" >How Cyber Security experts prevent cyber-attacks?</h5>
+                  <p class="card-text">-Jai Satwik</p>
+                </div>
+              </div>
+          </div>
+          
+          </div>
+          
+    </div>
+</section>
+<section class="codeEditor">
+  <h1>The following code is vulnerable to </h1>
+  <div class="editor">
+    <div class="editor__wrapper">
+        <div class="editor__body">
+            <div id="editorCode" class="editor__code">
+            </div>
+        </div>
+    
+    </div>
+    <div class="codeOptions">
+<div class="codeOption"><h3 style="color: #ececec;">Sensitive data exposure</h3></div>
+<div class="codeOption"><h3 style="color: #ececec;">cross-site scripting</h3></div>
+<div class="codeOption"><h3 style="color: #ececec;">Unvalidated Redirects and Forwards</h3></div>
+</div>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.3/ace.js"></script>
+
+  <script src="main.js"></script>
+</section>
+</div>
+<footer class="section bg-footer">
+  <div class="container">
+      <div class="row">
+        
+
+      
+
+          <div class="col-lg-2">
+              <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">Help</h6>
+                  <ul class="list-unstyled footer-link mt-4">
+                      <li><a href="./terms.html">Terms of Services</a></li>
+                      <li><a href="./terms.html">Privacy Policy</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="col-lg-3">
+              <div class="">
+                  <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
+                  <p class="contact-info mt-4">Contact us at:</p>
+                  <p class="contact-info">havkuliona@gmail.com</p>
+                
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+  <div class="text-center mt-5">
+      <p class="footer-alt mb-0 f-14" style="color: #ececec;">2023 &copy; HAVK, All rights reserved  </p>
+  </div>
+</footer>
+
+</body>
+</html>
+

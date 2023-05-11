@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./News.css">
+    <link rel="icon" href="./H.png">
+</head>
+<body>
+    <script>
+        fetch('https://havk-production.up.railway.app/').then((response)=>{
+            let data
+            let headers=[]
+            let arr
+            let text=[]
+            let dates=[]
+            let dataArr=[]
+            let date=new Date()
+            let year=date.getFullYear()
+             response.json().then((el)=>{data=el["articles"]}).then(()=>{
+                
+            arr=data.split(" ,")
+            arr.forEach(element => {
+                if(element.trim()!=""){
+
+                    dataArr.push(element.trim())
+                    
+                }
+            })
+            dataArr.forEach((element,index) => {
+                if(index%2===0){    
+                    headers.push(element)
+                }
+                else{
+                    text.push(element)
+                }
+            })
+          
+            
+             
+            headers.forEach((el,index) => {
+                const element = document.createElement('div')
+             element.setAttribute('class', "articleDiv")
+                const e = document.createElement('h3');
+                e.innerHTML=el
+                element.appendChild(e);
+                const texte = document.createElement('h2');
+                let newarr=text[index].split(', ')
+                texte.innerHTML=newarr[0]
+                newarr.splice(0,1)
+                let description= document.createElement('p');
+                description.innerHTML=newarr.toString()
+                element.appendChild(texte);
+                element.appendChild(description);
+                
+            document.body.appendChild(element) 
+            document.querySelector('.loader').style.display="none"
+            }) 
+           
+        
+
+            
+
+            
+            } )
+
+        })
+    </script>
+    <h1 style="color: #fff;font-family: Verdana, Geneva, Tahoma, sans-serif;">News Desk</h1>
+    <div class="loader">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball2"></div>
+    </div>
+</body>
+</html>
